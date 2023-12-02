@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: rgb(28,163,190);
+    background: linear-gradient(90deg, rgba(28,163,190,1) 0%, rgba(61,177,200,1) 40%, rgba(28,142,164,1) 100%);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    width: 800px;
+    max-height: 90vh;
+    margin: auto 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.btn-logout {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.books-container {
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.book-photo img{
+    max-height: 120px;
+}
+
+.book {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+}
+
+.book-actions {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.rent-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}

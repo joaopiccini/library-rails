@@ -1,0 +1,34 @@
+<div class="container">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+    <h1>Livros da biblioteca</h1>
+    <%= button_to 'Logout', logout_path, method: :post, class: 'btn-logout' %>
+  </div>
+
+  <div class="books-container">
+    <div>
+      <ul>
+        <% @books.each do |book| %>
+          <li>
+            <div class="book">
+              <div class="book-info">
+                <div class="book-photo">
+                  <%= image_tag('livro.jpeg') %>
+                </div>
+                <div>
+                  <h3><strong><%= book.title %></strong></h4>
+                  <p><%= book.author %></p>
+                  <p><%= book.publication %></p>
+                </div>
+              </div>
+              <div class="book-actions">
+                <% if !book.rented %>
+                  <%= button_to 'Alugar', rent_book_path(book), method: :post, class: 'rent-button' %>
+                <% end %>
+              </div>
+            </div>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

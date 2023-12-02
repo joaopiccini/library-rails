@@ -1,0 +1,13 @@
+<div class="login-container">
+  <%= image_tag('logo.png') %>
+
+  <%= form_for(:session, url: login_path, html: { 'data-turbolinks': 'false' }) do |f| %>
+    <label for="email">Email</label>
+    <%= f.email_field :email, required: true %>
+
+    <label for="password">Password</label>
+    <%= f.password_field :password, required: true %>
+
+    <%= f.submit 'Login', class: 'btn-login' %>
+  <% end %>
+</div>
