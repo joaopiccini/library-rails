@@ -64,6 +64,21 @@ class BooksController < ApplicationController
     end
   end
 
+  def refund
+    @book = Book.find(params[:id])
+
+    if @book.rented
+      @book.update(rented: false)
+
+      rentals_to_destroy = Rental.where(book_id: @book.id)
+      rentals_to_destroy.destroy_all
+
+      redirect_to root_path, notice: 'Livro devolvido com sucesso.'
+    else
+      redirect_to root_path, alert: 'Livro não está alugado.'
+    end
+  end
+
   private
     def set_book
       @book = Book.find(params[:id])

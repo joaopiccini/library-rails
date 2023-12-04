@@ -36,7 +36,8 @@ input {
     border-radius: 5px;
 }
 
-input[type="submit"] {
+.btn-login {
+    margin-top: 15px;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -44,8 +45,4 @@ input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
-}
-
-.btn-login {
-    margin-top: 15px;
 }

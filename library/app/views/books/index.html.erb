@@ -25,6 +25,9 @@
                 <% if !book.rented %>
                   <%= button_to 'Alugar', rent_book_path(book), method: :post, class: 'rent-button' %>
                 <% end %>
+                <% if book.rented %>
+                  <%= button_to 'Devolver', refund_book_path(book), method: :post, class: 'refund-button' %>
+                <% end %>
               </div>
             </div>
           </li>

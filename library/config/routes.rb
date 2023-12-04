@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :books do
     member do
       post 'rent'
+      post 'refund'
     end
   end
   resources :rentals
