@@ -4,6 +4,12 @@ User.create!(
   password: '123'
 )
 
+User.create!(
+  name: 'Teste',
+  email: 'teste@gmail.com',
+  password: '123'
+)
+
 Book.create!(title: "Dom Quixote", author: "Miguel de Cervantes", publication: '02/12/2023', rented: false)
 Book.create!(title: "Cem Anos de Solidão", author: "Gabriel Garcia Marquez", publication: '02/12/2023', rented: false)
 Book.create!(title: "Crime e Castigo", author: "Fyodor Dostoevsky", publication: '02/12/2023', rented: false)

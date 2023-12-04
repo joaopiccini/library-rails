@@ -6286,3 +6286,1398 @@ Processing by BooksController#index as HTML
 Completed 200 OK in 258ms (Views: 224.9ms | ActiveRecord: 4.7ms)
 
 
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:20:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.6.10/gems/activerecord-5.2.8/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (3.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  Rendered books/index.html.erb within layouts/application (2120.5ms)
+Completed 500 Internal Server Error in 2250ms (ActiveRecord: 6.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `pay_penalty_book_path' for #<#<Class:0x0000558577c4e440>:0x0000558577cd99f0>):
+    50:         <p>Você deve pagar uma multa de R$<%= rand(3..10) %>,00.</p>
+    51:       </div>
+    52:       <div class="modal-footer">
+    53:         <%= button_to 'Pagar Multa', pay_penalty_book_path(@book), method: :post, class: 'btn btn-primary' %>
+    54:         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+    55:       </div>
+    56:     </div>
+  
+app/views/books/index.html.erb:53:in `_app_views_books_index_html_erb__4148179040769777025_47015864116680'
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:20:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (14.6ms)
+Completed 500 Internal Server Error in 288ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_bootstrap_modal with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/rails/library/app/views"
+):
+    11: 
+    12:   <body>
+    13:     <%= yield %>
+    14:     <%= render 'layouts/bootstrap_modal' %>
+    15:   </body>
+    16: </html>
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__2241567237106076245_70317954358880'
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:20:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (12.8ms)
+Completed 500 Internal Server Error in 229ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_bootstrap_modal with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/rails/library/app/views"
+):
+    11: 
+    12:   <body>
+    13:     <%= yield %>
+    14:     <%= render 'layouts/bootstrap_modal' %>
+    15:   </body>
+    16: </html>
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__2241567237106076245_70317954818540'
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:22:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.6.10/gems/activerecord-5.2.8/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (314.4ms)
+  Rendered layouts/_bootstrap_modal.html.erb (142.1ms)
+Completed 500 Internal Server Error in 746ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `pay_penalty_book_path' for #<#<Class:0x000055fc052d9388>:0x000055fc0530c0d0>):
+    11:         <p>Você deve pagar uma multa de R$<%= rand(3..10) %>,00.</p>
+    12:       </div>
+    13:       <div class="modal-footer">
+    14:         <%= button_to 'Pagar Multa', pay_penalty_book_path(@book), method: :post, class: 'btn btn-primary' %>
+    15:         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+    16:       </div>
+    17:     </div>
+  
+app/views/layouts/_bootstrap_modal.html.erb:14:in `_app_views_layouts__bootstrap_modal_html_erb__3293705164369355132_70147435056660'
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__2921217055378180632_47270453727360'
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:23:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (12.4ms)
+  Rendered layouts/_bootstrap_modal.html.erb (274.0ms)
+Completed 500 Internal Server Error in 527ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `book' for #<#<Class:0x000055fc052d9388>:0x00007f98f1c67a28>):
+    11:         <p>Você deve pagar uma multa de R$<%= rand(3..10) %>,00.</p>
+    12:       </div>
+    13:       <div class="modal-footer">
+    14:         <%= button_to 'Pagar Multa', pay_penalty_book_path(book), method: :post, class: 'btn btn-primary' %>
+    15:         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+    16:       </div>
+    17:     </div>
+  
+app/views/layouts/_bootstrap_modal.html.erb:14:in `_app_views_layouts__bootstrap_modal_html_erb__3293705164369355132_47270445283680'
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__2921217055378180632_70147434030080'
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:24:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_bootstrap_modal.html.erb (117.0ms)
+Completed 500 Internal Server Error in 346ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `pay_penalty_book_path' for #<#<Class:0x000055fc052d9388>:0x00007f98f0bc6480>):
+    11:         <p>Você deve pagar uma multa de R$<%= rand(3..10) %>,00.</p>
+    12:       </div>
+    13:       <div class="modal-footer">
+    14:         <%= button_to 'Pagar Multa', pay_penalty_book_path(@book), method: :post, class: 'btn btn-primary' %>
+    15:         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+    16:       </div>
+    17:     </div>
+  
+app/views/layouts/_bootstrap_modal.html.erb:14:in `_app_views_layouts__bootstrap_modal_html_erb__3293705164369355132_70147430988780'
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__2921217055378180632_70147425139060'
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:25:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_bootstrap_modal.html.erb (13.6ms)
+Completed 500 Internal Server Error in 200ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"pay_penalty", :controller=>"books", :id=>nil}, missing required keys: [:id]):
+    11:         <p>Você deve pagar uma multa de R$<%= rand(3..10) %>,00.</p>
+    12:       </div>
+    13:       <div class="modal-footer">
+    14:         <%= button_to 'Pagar Multa', pay_penalty_book_path(@book), method: :post, class: 'btn btn-primary' %>
+    15:         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+    16:       </div>
+    17:     </div>
+  
+app/views/layouts/_bootstrap_modal.html.erb:14:in `_app_views_layouts__bootstrap_modal_html_erb__3293705164369355132_70147431223600'
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__2921217055378180632_70147424731980'
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:26:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_bootstrap_modal.html.erb (15.1ms)
+Completed 500 Internal Server Error in 209ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"pay_penalty", :controller=>"books", :id=>nil}, missing required keys: [:id]):
+    11:         <p>Você deve pagar uma multa de R$<%= rand(3..10) %>,00.</p>
+    12:       </div>
+    13:       <div class="modal-footer">
+    14:         <%= button_to 'Pagar Multa', pay_penalty_book_path(@book), method: :post, class: 'btn btn-primary' %>
+    15:         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+    16:       </div>
+    17:     </div>
+  
+app/views/layouts/_bootstrap_modal.html.erb:14:in `_app_views_layouts__bootstrap_modal_html_erb__3293705164369355132_70147438066420'
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__2921217055378180632_70147434821620'
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:26:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_bootstrap_modal.html.erb (13.7ms)
+Completed 500 Internal Server Error in 190ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"pay_penalty", :controller=>"books", :id=>nil}, missing required keys: [:id]):
+    11:         <p>Você deve pagar uma multa de R$<%= rand(3..10) %>,00.</p>
+    12:       </div>
+    13:       <div class="modal-footer">
+    14:         <%= button_to 'Pagar Multa', pay_penalty_book_path(@book), method: :post, class: 'btn btn-primary' %>
+    15:         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+    16:       </div>
+    17:     </div>
+  
+app/views/layouts/_bootstrap_modal.html.erb:14:in `_app_views_layouts__bootstrap_modal_html_erb__3293705164369355132_70147430948160'
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__2921217055378180632_47270456013000'
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:27:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 211ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_bootstrap_modal with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/rails/library/app/views"
+):
+    11: 
+    12:   <body>
+    13:     <%= yield %>
+    14:     <%= render 'layouts/bootstrap_modal' %>
+    15:   </body>
+    16: </html>
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__2921217055378180632_70147432921940'
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:28:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (15.7ms)
+  Rendered layouts/_bootstrap_modal.html.erb (15.1ms)
+Completed 500 Internal Server Error in 239ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"pay_penalty", :controller=>"books", :id=>nil}, missing required keys: [:id]):
+    11:         <p>Você deve pagar uma multa de R$<%= rand(3..10) %>,00.</p>
+    12:       </div>
+    13:       <div class="modal-footer">
+    14:         <%= button_to 'Pagar Multa', pay_penalty_book_path(@book), method: :post, class: 'btn btn-primary' %>
+    15:         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+    16:       </div>
+    17:     </div>
+  
+app/views/layouts/_bootstrap_modal.html.erb:14:in `_app_views_layouts__bootstrap_modal_html_erb__3293705164369355132_70147437316780'
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__2921217055378180632_70147434159200'
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:28:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_bootstrap_modal.html.erb (206.2ms)
+Completed 500 Internal Server Error in 396ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `book' for #<#<Class:0x00007f98f1ddfb80>:0x000055fc050de880>):
+    11:         <p>Você deve pagar uma multa de R$<%= rand(3..10) %>,00.</p>
+    12:       </div>
+    13:       <div class="modal-footer">
+    14:         <%= button_to 'Pagar Multa', pay_penalty_book_path(book), method: :post, class: 'btn btn-primary' %>
+    15:         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+    16:       </div>
+    17:     </div>
+  
+app/views/layouts/_bootstrap_modal.html.erb:14:in `_app_views_layouts__bootstrap_modal_html_erb__3293705164369355132_70147430724780'
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__2921217055378180632_47270453070400'
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:29:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_bootstrap_modal.html.erb (190.5ms)
+Completed 500 Internal Server Error in 371ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `book' for #<#<Class:0x00007f98f1ddfb80>:0x00007f98f09a70c8>):
+    11:         <p>Você deve pagar uma multa de R$<%= rand(3..10) %>,00.</p>
+    12:       </div>
+    13:       <div class="modal-footer">
+    14:         <%= button_to 'Pagar Multa', pay_penalty_book_path(book), method: :post, class: 'btn btn-primary' %>
+    15:         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+    16:       </div>
+    17:     </div>
+  
+app/views/layouts/_bootstrap_modal.html.erb:14:in `_app_views_layouts__bootstrap_modal_html_erb__3293705164369355132_70147431205200'
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__2921217055378180632_70147425021840'
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:29:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_bootstrap_modal.html.erb (259.9ms)
+Completed 500 Internal Server Error in 459ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `book' for #<#<Class:0x00007f98f1ddfb80>:0x00007f98f1bf2548>):
+    11:         <p>Você deve pagar uma multa de R$<%= rand(3..10) %>,00.</p>
+    12:       </div>
+    13:       <div class="modal-footer">
+    14:         <%= button_to 'Pagar Multa', pay_penalty_book_path(book), method: :post, class: 'btn btn-primary' %>
+    15:         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+    16:       </div>
+    17:     </div>
+  
+app/views/layouts/_bootstrap_modal.html.erb:14:in `_app_views_layouts__bootstrap_modal_html_erb__3293705164369355132_70147435484420'
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__2921217055378180632_70147433812880'
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:29:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_bootstrap_modal.html.erb (196.6ms)
+Completed 500 Internal Server Error in 388ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `book' for #<#<Class:0x00007f98f1ddfb80>:0x00007f98f170bb88>):
+    11:         <p>Você deve pagar uma multa de R$<%= rand(3..10) %>,00.</p>
+    12:       </div>
+    13:       <div class="modal-footer">
+    14:         <%= button_to 'Pagar Multa', pay_penalty_book_path(book), method: :post, class: 'btn btn-primary' %>
+    15:         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+    16:       </div>
+    17:     </div>
+  
+app/views/layouts/_bootstrap_modal.html.erb:14:in `_app_views_layouts__bootstrap_modal_html_erb__3293705164369355132_70147433550220'
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__2921217055378180632_70147431276320'
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:29:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_bootstrap_modal.html.erb (204.6ms)
+Completed 500 Internal Server Error in 401ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `book' for #<#<Class:0x00007f98f1ddfb80>:0x000055fc056e54b8>):
+    11:         <p>Você deve pagar uma multa de R$<%= rand(3..10) %>,00.</p>
+    12:       </div>
+    13:       <div class="modal-footer">
+    14:         <%= button_to 'Pagar Multa', pay_penalty_book_path(book), method: :post, class: 'btn btn-primary' %>
+    15:         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+    16:       </div>
+    17:     </div>
+  
+app/views/layouts/_bootstrap_modal.html.erb:14:in `_app_views_layouts__bootstrap_modal_html_erb__3293705164369355132_70147430967320'
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__2921217055378180632_47270455662700'
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:29:38 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_bootstrap_modal.html.erb (214.9ms)
+Completed 500 Internal Server Error in 455ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `book' for #<#<Class:0x00007f98f1ddfb80>:0x00007f98f1c96f80>):
+    11:         <p>Você deve pagar uma multa de R$<%= rand(3..10) %>,00.</p>
+    12:       </div>
+    13:       <div class="modal-footer">
+    14:         <%= button_to 'Pagar Multa', pay_penalty_book_path(book), method: :post, class: 'btn btn-primary' %>
+    15:         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+    16:       </div>
+    17:     </div>
+  
+app/views/layouts/_bootstrap_modal.html.erb:14:in `_app_views_layouts__bootstrap_modal_html_erb__3293705164369355132_70147435946420'
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__2921217055378180632_70147434158520'
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:35:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.6.10/gems/activerecord-5.2.8/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (307.0ms)
+Completed 200 OK in 594ms (Views: 576.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 10.0.2.2 at 2023-12-04 23:35:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pcruFEiv4ejdlGrI2eaFTyxgjdr6jnDGyfP9+ypPQ5r/kTWVjz+iGmJ7fcd30u2Tf1wYdaLOXKSI761bbL0b4A==", "session"=>{"email"=>"admin@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 41ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:35:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  Rendered books/index.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 247ms (Views: 216.8ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/books/20/rent" for 10.0.2.2 at 2023-12-04 23:35:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#rent as HTML
+  Parameters: {"authenticity_token"=>"YuO6RRIzfVQgPkrV/e5b3zLQoJN8Cd2DKrj+0sCoWYw4uGHE1aM+pp/RXdpT2jMDYew1PCRJ8eFrpK5yhloB9g==", "id"=>"20"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:57
+  [1m[36mBook Update (3.0ms)[0m  [1m[33mUPDATE "books" SET "rented" = $1, "updated_at" = $2 WHERE "books"."id" = $3[0m  [["rented", true], ["updated_at", "2023-12-04 23:35:31.122629"], ["id", 20]]
+  ↳ app/controllers/books_controller.rb:57
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:57
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mRental Create (3.7ms)[0m  [1m[32mINSERT INTO "rentals" ("book_id", "user_id", "rental", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["book_id", 20], ["user_id", 1], ["rental", "2023-12-04 23:35:31 +0000"], ["created_at", "2023-12-04 23:35:31.211126"], ["updated_at", "2023-12-04 23:35:31.211126"]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:59
+Redirected to http://localhost:3000/
+Completed 302 Found in 118ms (ActiveRecord: 12.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:35:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  Rendered books/index.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 180ms (Views: 162.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books/20/refund" for 10.0.2.2 at 2023-12-04 23:35:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#refund as HTML
+  Parameters: {"authenticity_token"=>"TR3DipTHvmhko+E4qpRiRLxjvY/bbQWGUSj+Hw06aYsXRhgLU1f9mttM9jcEoAqY718oIIMtKeQQNK6/S8gx8Q==", "id"=>"20"}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:71
+  [1m[36mBook Update (0.4ms)[0m  [1m[33mUPDATE "books" SET "rented" = $1, "updated_at" = $2 WHERE "books"."id" = $3[0m  [["rented", false], ["updated_at", "2023-12-04 23:35:37.361095"], ["id", 20]]
+  ↳ app/controllers/books_controller.rb:71
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:71
+  [1m[36mRental Load (0.2ms)[0m  [1m[34mSELECT "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1[0m  [["book_id", 20]]
+  ↳ app/controllers/books_controller.rb:74
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:74
+  [1m[36mRental Destroy (0.3ms)[0m  [1m[31mDELETE FROM "rentals" WHERE "rentals"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/books_controller.rb:74
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:74
+Redirected to http://localhost:3000/
+Completed 302 Found in 43ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:35:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  Rendered books/index.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 217ms (Views: 200.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:38:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  Rendered books/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 213ms (Views: 169.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/books/20/rent" for 10.0.2.2 at 2023-12-04 23:38:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#rent as HTML
+  Parameters: {"authenticity_token"=>"ItbudOZStxI3q0iQLZsJerKAN//JwTDMz5+LlHnU7Lh4jTX1IcL04IhEX5+Dr2Gm4byiUJGBHK6Og9s0Pya0wg==", "id"=>"20"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:54
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:57
+  [1m[36mBook Update (0.3ms)[0m  [1m[33mUPDATE "books" SET "rented" = $1, "updated_at" = $2 WHERE "books"."id" = $3[0m  [["rented", true], ["updated_at", "2023-12-04 23:38:45.761441"], ["id", 20]]
+  ↳ app/controllers/books_controller.rb:57
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:57
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mRental Create (0.4ms)[0m  [1m[32mINSERT INTO "rentals" ("book_id", "user_id", "rental", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["book_id", 20], ["user_id", 1], ["rental", "2023-12-04 23:38:45 +0000"], ["created_at", "2023-12-04 23:38:45.778424"], ["updated_at", "2023-12-04 23:38:45.778424"]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:59
+Redirected to http://localhost:3000/
+Completed 302 Found in 30ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:38:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  Rendered books/index.html.erb within layouts/application (47.3ms)
+Completed 500 Internal Server Error in 108ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `rentals' for #<Book:0x00007fb7e98267e0>
+Did you mean?  rented_was):
+    25:                 <% if !book.rented %>
+    26:                   <%= button_to 'Alugar', rent_book_path(book), method: :post, class: 'rent-button' %>
+    27:                 <% end %>
+    28:                 <% if book.rented && book.rentals.find_by(user_id: current_user.id) %>
+    29:                   <%= button_to 'Devolver', refund_book_path(book), method: :post, class: 'refund-button' %>
+    30:                 <% end %>
+    31:               </div>
+  
+app/views/books/index.html.erb:28:in `block in _app_views_books_index_html_erb__2097849433955644832_70213936537540'
+app/views/books/index.html.erb:11:in `_app_views_books_index_html_erb__2097849433955644832_70213936537540'
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:39:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  Rendered books/index.html.erb within layouts/application (35.8ms)
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `rentals' for #<Book:0x00007fb7e9a0a700>
+Did you mean?  rented_was):
+    25:                 <% if !book.rented %>
+    26:                   <%= button_to 'Alugar', rent_book_path(book), method: :post, class: 'rent-button' %>
+    27:                 <% end %>
+    28:                 <% if book.rented && book.rentals.find_by(user_id: current_user.id) %>
+    29:                   <%= button_to 'Devolver', refund_book_path(book), method: :post, class: 'refund-button' %>
+    30:                 <% end %>
+    31:               </div>
+  
+app/views/books/index.html.erb:28:in `block in _app_views_books_index_html_erb__2097849433955644832_70213937521440'
+app/views/books/index.html.erb:11:in `_app_views_books_index_html_erb__2097849433955644832_70213937521440'
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:39:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  Rendered books/index.html.erb within layouts/application (39.6ms)
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `rentals' for #<Book:0x00007fb7e9c26de0>
+Did you mean?  rented_was):
+    25:                 <% if !book.rented %>
+    26:                   <%= button_to 'Alugar', rent_book_path(book), method: :post, class: 'rent-button' %>
+    27:                 <% end %>
+    28:                 <% if book.rented && book.rentals.find_by(user_id: current_user.id) %>
+    29:                   <%= button_to 'Devolver', refund_book_path(book), method: :post, class: 'refund-button' %>
+    30:                 <% end %>
+    31:               </div>
+  
+app/views/books/index.html.erb:28:in `block in _app_views_books_index_html_erb__2097849433955644832_70213938716040'
+app/views/books/index.html.erb:11:in `_app_views_books_index_html_erb__2097849433955644832_70213938716040'
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:39:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 162ms (Views: 138.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 10.0.2.2 at 2023-12-04 23:39:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c2L3xORKTVIKU9Fl12nLKPG7651HPzuUzdtbgvJ2C88pOSxFI9oOoLW8xmp5XaP0ood+Mh9/F/aMxwsitIRTtQ==", "session"=>{"email"=>"admin@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:39:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  Rendered books/index.html.erb within layouts/application (67.9ms)
+Completed 500 Internal Server Error in 146ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `rentals' for #<Book:0x00007fb7d42ad2b0>
+Did you mean?  rented_was):
+    25:                 <% if !book.rented %>
+    26:                   <%= button_to 'Alugar', rent_book_path(book), method: :post, class: 'rent-button' %>
+    27:                 <% end %>
+    28:                 <% if book.rented && book.rentals.find_by(user_id: current_user.id) %>
+    29:                   <%= button_to 'Devolver', refund_book_path(book), method: :post, class: 'refund-button' %>
+    30:                 <% end %>
+    31:               </div>
+  
+app/views/books/index.html.erb:28:in `block in _app_views_books_index_html_erb__2097849433955644832_70213757595260'
+app/views/books/index.html.erb:11:in `_app_views_books_index_html_erb__2097849433955644832_70213757595260'
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:40:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  Rendered books/index.html.erb within layouts/application (233.0ms)
+Completed 500 Internal Server Error in 326ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `rentals' for #<#<Class:0x00007fb7d4186120>:0x00007fb7e86b47f0>
+Did you mean?  rentals_url):
+    25:                 <% if !book.rented %>
+    26:                   <%= button_to 'Alugar', rent_book_path(book), method: :post, class: 'rent-button' %>
+    27:                 <% end %>
+    28:                 <% if book.rented && rentals.find_by(user_id: current_user.id) %>
+    29:                   <%= button_to 'Devolver', refund_book_path(book), method: :post, class: 'refund-button' %>
+    30:                 <% end %>
+    31:               </div>
+  
+app/views/books/index.html.erb:28:in `block in _app_views_books_index_html_erb__2097849433955644832_70213927549340'
+app/views/books/index.html.erb:11:in `_app_views_books_index_html_erb__2097849433955644832_70213927549340'
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:42:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 204ms (Views: 174.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 10.0.2.2 at 2023-12-04 23:42:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"knpqTtnll8Ks9FWh4Z/dQTEqcFJbbfkWEF4LRsaGSZHIIbHPHnXUMBMbQq5Pq7WdYhbl/QMt1XRRQlvmgHQR6w==", "session"=>{"email"=>"admin@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:42:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  Rendered books/index.html.erb within layouts/application (55.2ms)
+Completed 500 Internal Server Error in 156ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `rentals' for #<Book:0x00007fb7d42c6828>
+Did you mean?  rented_was):
+    25:                 <% if !book.rented %>
+    26:                   <%= button_to 'Alugar', rent_book_path(book), method: :post, class: 'rent-button' %>
+    27:                 <% end %>
+    28:                 <% if book.rented && book.rentals.find_by(user_id: current_user.id)%>
+    29:                   <%= button_to 'Devolver', refund_book_path(book), method: :post, class: 'refund-button' %>
+    30:                 <% end %>
+    31:               </div>
+  
+app/views/books/index.html.erb:28:in `block in _app_views_books_index_html_erb__2097849433955644832_70213757647940'
+app/views/books/index.html.erb:11:in `_app_views_books_index_html_erb__2097849433955644832_70213757647940'
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:43:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.6.10/gems/activerecord-5.2.8/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mRental Load (0.3ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 20], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  Rendered books/index.html.erb within layouts/application (429.5ms)
+Completed 200 OK in 762ms (Views: 670.1ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/books/2/rent" for 10.0.2.2 at 2023-12-04 23:44:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#rent as HTML
+  Parameters: {"authenticity_token"=>"1/4Vlxu5wum/8CU2BQxBGKKqponjjwS/nnXS5+3+Mb2Npc4W3CmBGwAfMjmrOCnE8ZYzJrvPKN3faYJHqwxpxw==", "id"=>"2"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:54
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:57
+  [1m[36mBook Update (0.4ms)[0m  [1m[33mUPDATE "books" SET "rented" = $1, "updated_at" = $2 WHERE "books"."id" = $3[0m  [["rented", true], ["updated_at", "2023-12-04 23:44:00.251734"], ["id", 2]]
+  ↳ app/controllers/books_controller.rb:57
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:57
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mRental Create (0.9ms)[0m  [1m[32mINSERT INTO "rentals" ("book_id", "user_id", "rental", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["book_id", 2], ["user_id", 1], ["rental", "2023-12-04 23:44:00 +0000"], ["created_at", "2023-12-04 23:44:00.285570"], ["updated_at", "2023-12-04 23:44:00.285570"]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:59
+Redirected to http://localhost:3000/
+Completed 302 Found in 61ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:44:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mRental Load (0.3ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 20], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  [1m[36mRental Load (0.4ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 2], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  Rendered books/index.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 199ms (Views: 180.4ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/books/20/refund" for 10.0.2.2 at 2023-12-04 23:44:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#refund as HTML
+  Parameters: {"authenticity_token"=>"6tNmph7qMWf4Lr80DRG9xuZdmH7vaikAoO+twW3Dx22wiL0n2XpylUfBqDujJdUatWEN0bcqBWLh8/1hKzGfFw==", "id"=>"20"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:71
+  [1m[36mBook Update (1.0ms)[0m  [1m[33mUPDATE "books" SET "rented" = $1, "updated_at" = $2 WHERE "books"."id" = $3[0m  [["rented", false], ["updated_at", "2023-12-04 23:44:03.797195"], ["id", 20]]
+  ↳ app/controllers/books_controller.rb:71
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:71
+  [1m[36mRental Load (0.2ms)[0m  [1m[34mSELECT "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1[0m  [["book_id", 20]]
+  ↳ app/controllers/books_controller.rb:74
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:74
+  [1m[36mRental Destroy (0.4ms)[0m  [1m[31mDELETE FROM "rentals" WHERE "rentals"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/books_controller.rb:74
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:74
+Redirected to http://localhost:3000/
+Completed 302 Found in 52ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:44:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mRental Load (0.4ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 2], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  Rendered books/index.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 204ms (Views: 178.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/books/2/refund" for 10.0.2.2 at 2023-12-04 23:44:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#refund as HTML
+  Parameters: {"authenticity_token"=>"AzeFEW3zOyzpzkRforTumfRPjzaHXqBI07rSxP+F9clZbF6QqmN43lYhU1AMgIZFp3Mamd8ejCqSpoJkuXetsw==", "id"=>"2"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:68
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:71
+  [1m[36mBook Update (0.3ms)[0m  [1m[33mUPDATE "books" SET "rented" = $1, "updated_at" = $2 WHERE "books"."id" = $3[0m  [["rented", false], ["updated_at", "2023-12-04 23:44:06.603084"], ["id", 2]]
+  ↳ app/controllers/books_controller.rb:71
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:71
+  [1m[36mRental Load (0.5ms)[0m  [1m[34mSELECT "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1[0m  [["book_id", 2]]
+  ↳ app/controllers/books_controller.rb:74
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:74
+  [1m[36mRental Destroy (0.4ms)[0m  [1m[31mDELETE FROM "rentals" WHERE "rentals"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/books_controller.rb:74
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:74
+Redirected to http://localhost:3000/
+Completed 302 Found in 46ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:44:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  Rendered books/index.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 238ms (Views: 222.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/books/1/rent" for 10.0.2.2 at 2023-12-04 23:44:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#rent as HTML
+  Parameters: {"authenticity_token"=>"+la5vHk/jpXPBt9bJE7wCoQZ73Zv4ZlCRMm7OWDl5pygDWI9vq/NZ3DpyFSKepjW1yV62TehtSAF1euZJhe+5g==", "id"=>"1"}
+  [1m[36mBook Load (1.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:54
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:57
+  [1m[36mBook Update (0.7ms)[0m  [1m[33mUPDATE "books" SET "rented" = $1, "updated_at" = $2 WHERE "books"."id" = $3[0m  [["rented", true], ["updated_at", "2023-12-04 23:44:10.601274"], ["id", 1]]
+  ↳ app/controllers/books_controller.rb:57
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:57
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mRental Create (1.0ms)[0m  [1m[32mINSERT INTO "rentals" ("book_id", "user_id", "rental", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["book_id", 1], ["user_id", 1], ["rental", "2023-12-04 23:44:10 +0000"], ["created_at", "2023-12-04 23:44:10.654239"], ["updated_at", "2023-12-04 23:44:10.654239"]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:59
+Redirected to http://localhost:3000/
+Completed 302 Found in 96ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:44:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mRental Load (0.4ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  Rendered books/index.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 183ms (Views: 166.3ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/books/4/rent" for 10.0.2.2 at 2023-12-04 23:44:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#rent as HTML
+  Parameters: {"authenticity_token"=>"8YbSl5vAR4DoYbw3Z+WNurcbjDkOzpwaYCYJoJ73xHKr3QkWXFAEcleOqzjJ0eVm5CcZllaOsHghOlkA2AWcCA==", "id"=>"4"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:57
+  [1m[36mBook Update (0.4ms)[0m  [1m[33mUPDATE "books" SET "rented" = $1, "updated_at" = $2 WHERE "books"."id" = $3[0m  [["rented", true], ["updated_at", "2023-12-04 23:44:11.725639"], ["id", 4]]
+  ↳ app/controllers/books_controller.rb:57
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:57
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mRental Create (0.4ms)[0m  [1m[32mINSERT INTO "rentals" ("book_id", "user_id", "rental", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["book_id", 4], ["user_id", 1], ["rental", "2023-12-04 23:44:11 +0000"], ["created_at", "2023-12-04 23:44:11.759061"], ["updated_at", "2023-12-04 23:44:11.759061"]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:59
+Redirected to http://localhost:3000/
+Completed 302 Found in 62ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:44:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mRental Load (0.4ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  [1m[36mRental Load (0.3ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 4], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  Rendered books/index.html.erb within layouts/application (42.6ms)
+Completed 200 OK in 265ms (Views: 236.5ms | ActiveRecord: 1.3ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (110.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "library"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "library"[0m
+  ↳ bin/rails:9
+  [1m[35m (788.8ms)[0m  [1m[35mCREATE DATABASE "library" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE DATABASE "library" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (19.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (18.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5563979726711371980)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateBooks (20231202124611)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (11.9ms)[0m  [1m[35mCREATE TABLE "books" ("id" bigserial primary key, "title" character varying, "author" character varying, "publication" character varying, "rented" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20231202124611_create_books.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20231202124611"]]
+  ↳ bin/rails:9
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20231202124644)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying, "password" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20231202124644_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20231202124644"]]
+  ↳ bin/rails:9
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateRentals (20231202124720)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (12.0ms)[0m  [1m[35mCREATE TABLE "rentals" ("id" bigserial primary key, "book_id" bigint, "user_id" bigint, "rental" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_17cd2f4924"
+FOREIGN KEY ("book_id")
+  REFERENCES "books" ("id")
+, CONSTRAINT "fk_rails_2c7010c082"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20231202124720_create_rentals.rb:3
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE  INDEX  "index_rentals_on_book_id" ON "rentals"  ("book_id")[0m
+  ↳ db/migrate/20231202124720_create_rentals.rb:3
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE  INDEX  "index_rentals_on_user_id" ON "rentals"  ("user_id")[0m
+  ↳ db/migrate/20231202124720_create_rentals.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20231202124720"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-12-04 23:45:04.942101"], ["updated_at", "2023-12-04 23:45:04.942101"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5563979726711371980)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Admin"], ["email", "admin@gmail.com"], ["password", "123"], ["created_at", "2023-12-04 23:45:12.157577"], ["updated_at", "2023-12-04 23:45:12.157577"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Teste"], ["email", "teste@gmail.com"], ["password", "123"], ["created_at", "2023-12-04 23:45:12.164431"], ["updated_at", "2023-12-04 23:45:12.164431"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mBook Create (0.5ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication", "rented", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Dom Quixote"], ["author", "Miguel de Cervantes"], ["publication", "02/12/2023"], ["rented", false], ["created_at", "2023-12-04 23:45:12.185491"], ["updated_at", "2023-12-04 23:45:12.185491"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication", "rented", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Cem Anos de Solidão"], ["author", "Gabriel Garcia Marquez"], ["publication", "02/12/2023"], ["rented", false], ["created_at", "2023-12-04 23:45:12.188657"], ["updated_at", "2023-12-04 23:45:12.188657"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mBook Create (0.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication", "rented", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Crime e Castigo"], ["author", "Fyodor Dostoevsky"], ["publication", "02/12/2023"], ["rented", false], ["created_at", "2023-12-04 23:45:12.191268"], ["updated_at", "2023-12-04 23:45:12.191268"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication", "rented", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "A Revolta de Atlas"], ["author", "Ayn Rand"], ["publication", "02/12/2023"], ["rented", false], ["created_at", "2023-12-04 23:45:12.193767"], ["updated_at", "2023-12-04 23:45:12.193767"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mBook Create (0.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication", "rented", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "1984"], ["author", "George Orwell"], ["publication", "02/12/2023"], ["rented", false], ["created_at", "2023-12-04 23:45:12.196318"], ["updated_at", "2023-12-04 23:45:12.196318"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication", "rented", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "O Senhor dos Anéis"], ["author", "J.R.R. Tolkien"], ["publication", "02/12/2023"], ["rented", false], ["created_at", "2023-12-04 23:45:12.198786"], ["updated_at", "2023-12-04 23:45:12.198786"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication", "rented", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Ulisses"], ["author", "James Joyce"], ["publication", "02/12/2023"], ["rented", false], ["created_at", "2023-12-04 23:45:12.200918"], ["updated_at", "2023-12-04 23:45:12.200918"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication", "rented", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Matar um Mockingbird"], ["author", "Harper Lee"], ["publication", "02/12/2023"], ["rented", false], ["created_at", "2023-12-04 23:45:12.202930"], ["updated_at", "2023-12-04 23:45:12.202930"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication", "rented", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "O Grande Gatsby"], ["author", "F. Scott Fitzgerald"], ["publication", "02/12/2023"], ["rented", false], ["created_at", "2023-12-04 23:45:12.204756"], ["updated_at", "2023-12-04 23:45:12.204756"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication", "rented", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "O Apanhador no Campo de Centeio"], ["author", "J.D. Salinger"], ["publication", "02/12/2023"], ["rented", false], ["created_at", "2023-12-04 23:45:12.206641"], ["updated_at", "2023-12-04 23:45:12.206641"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication", "rented", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Cem Anos de Solidão"], ["author", "Gabriel Garcia Marquez"], ["publication", "02/12/2023"], ["rented", false], ["created_at", "2023-12-04 23:45:12.208433"], ["updated_at", "2023-12-04 23:45:12.208433"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication", "rented", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "O Alquimista"], ["author", "Paulo Coelho"], ["publication", "02/12/2023"], ["rented", false], ["created_at", "2023-12-04 23:45:12.210197"], ["updated_at", "2023-12-04 23:45:12.210197"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication", "rented", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Harry Potter e a Pedra Filosofal"], ["author", "J.K. Rowling"], ["publication", "02/12/2023"], ["rented", false], ["created_at", "2023-12-04 23:45:12.211881"], ["updated_at", "2023-12-04 23:45:12.211881"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication", "rented", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "O Código Da Vinci"], ["author", "Dan Brown"], ["publication", "02/12/2023"], ["rented", false], ["created_at", "2023-12-04 23:45:12.213603"], ["updated_at", "2023-12-04 23:45:12.213603"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication", "rented", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Orgulho e Preconceito"], ["author", "Jane Austen"], ["publication", "02/12/2023"], ["rented", false], ["created_at", "2023-12-04 23:45:12.216258"], ["updated_at", "2023-12-04 23:45:12.216258"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication", "rented", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "A Arte da Guerra"], ["author", "Sun Tzu"], ["publication", "02/12/2023"], ["rented", false], ["created_at", "2023-12-04 23:45:12.218628"], ["updated_at", "2023-12-04 23:45:12.218628"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication", "rented", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "O Hobbit"], ["author", "J.R.R. Tolkien"], ["publication", "02/12/2023"], ["rented", false], ["created_at", "2023-12-04 23:45:12.220587"], ["updated_at", "2023-12-04 23:45:12.220587"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication", "rented", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Os Miseráveis"], ["author", "Victor Hugo"], ["publication", "02/12/2023"], ["rented", false], ["created_at", "2023-12-04 23:45:12.222291"], ["updated_at", "2023-12-04 23:45:12.222291"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication", "rented", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "A Ilíada"], ["author", "Homer"], ["publication", "02/12/2023"], ["rented", false], ["created_at", "2023-12-04 23:45:12.223950"], ["updated_at", "2023-12-04 23:45:12.223950"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mBook Create (0.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "author", "publication", "rented", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "O Poder do Hábito"], ["author", "Charles Duhigg"], ["publication", "02/12/2023"], ["rented", false], ["created_at", "2023-12-04 23:45:12.225950"], ["updated_at", "2023-12-04 23:45:12.225950"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:45:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rvm/gems/ruby-2.6.10/gems/activerecord-5.2.8/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (295.1ms)
+Completed 200 OK in 534ms (Views: 517.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 10.0.2.2 at 2023-12-04 23:45:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 178ms (Views: 160.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 10.0.2.2 at 2023-12-04 23:45:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eoL0oEzid9gL4VCamjHMjvEL+4o7crGFaeaJxwj9hdsg2S8hi3I0KrQOR5U0BaRSojduJWMyneco+tlnTg/doQ==", "session"=>{"email"=>"admin@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "admin@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 51ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:45:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  Rendered books/index.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 197ms (Views: 164.4ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/login" for 10.0.2.2 at 2023-12-04 23:45:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EduPJS708kKPytDkQO1y8GXLGyUZXR/FKHIaajf9B5Y0Q4lmUeLkBFW95Gppg4m4qsdhry92jI3N76WSmr+jFA==", "session"=>{"email"=>"teste@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "teste@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:45:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  Rendered books/index.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 222ms (Views: 201.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/books/8/rent" for 10.0.2.2 at 2023-12-04 23:45:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#rent as HTML
+  Parameters: {"authenticity_token"=>"/TH70FaYfN4jd1aTS8EOxtATb0tc3oaw9vmPcfMJ9QSnaiBRkQg/LJyYQZzl9WYagy/65ASeqtK35d/Rtfutfg==", "id"=>"8"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:54
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:57
+  [1m[36mBook Update (0.6ms)[0m  [1m[33mUPDATE "books" SET "rented" = $1, "updated_at" = $2 WHERE "books"."id" = $3[0m  [["rented", true], ["updated_at", "2023-12-04 23:45:44.539524"], ["id", 8]]
+  ↳ app/controllers/books_controller.rb:57
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:57
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mRental Create (1.1ms)[0m  [1m[32mINSERT INTO "rentals" ("book_id", "user_id", "rental", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["book_id", 8], ["user_id", 1], ["rental", "2023-12-04 23:45:44 +0000"], ["created_at", "2023-12-04 23:45:44.631899"], ["updated_at", "2023-12-04 23:45:44.631899"]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:59
+Redirected to http://localhost:3000/
+Completed 302 Found in 121ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:45:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mRental Load (0.3ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 8], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  Rendered books/index.html.erb within layouts/application (38.7ms)
+Completed 200 OK in 195ms (Views: 179.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:45:48 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mRental Load (0.4ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 8], ["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  Rendered books/index.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 184ms (Views: 164.9ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/books/19/rent" for 10.0.2.2 at 2023-12-04 23:45:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#rent as HTML
+  Parameters: {"authenticity_token"=>"eqHAfnzMNwop09YPlmM3/L1TI4y6j9Fjnq5dDOWKzCUg+hv/u1x0+JY8wQA4V18g7m+2I+LP/QHfsg2so3iUXw==", "id"=>"19"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:57
+  [1m[36mBook Update (0.4ms)[0m  [1m[33mUPDATE "books" SET "rented" = $1, "updated_at" = $2 WHERE "books"."id" = $3[0m  [["rented", true], ["updated_at", "2023-12-04 23:45:52.125460"], ["id", 19]]
+  ↳ app/controllers/books_controller.rb:57
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:57
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mRental Create (1.0ms)[0m  [1m[32mINSERT INTO "rentals" ("book_id", "user_id", "rental", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["book_id", 19], ["user_id", 1], ["rental", "2023-12-04 23:45:52 +0000"], ["created_at", "2023-12-04 23:45:52.165335"], ["updated_at", "2023-12-04 23:45:52.165335"]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:59
+Redirected to http://localhost:3000/
+Completed 302 Found in 69ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:45:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mRental Load (0.6ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 8], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  [1m[36mRental Load (1.3ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 19], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  Rendered books/index.html.erb within layouts/application (60.6ms)
+Completed 200 OK in 250ms (Views: 230.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:45:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mRental Load (0.3ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 8], ["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  [1m[36mRental Load (0.3ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 19], ["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  Rendered books/index.html.erb within layouts/application (34.3ms)
+Completed 200 OK in 213ms (Views: 193.9ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/books/20/rent" for 10.0.2.2 at 2023-12-04 23:45:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#rent as HTML
+  Parameters: {"authenticity_token"=>"Cs2S0PE36zsf5lFsgz579gIpFCcQokrevdgf6m19bsgvVZSTjiH9fcWRZeKqUIC+zSVurSaJ2ZZYRaASwD/KSg==", "id"=>"20"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:54
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:57
+  [1m[36mBook Update (0.5ms)[0m  [1m[33mUPDATE "books" SET "rented" = $1, "updated_at" = $2 WHERE "books"."id" = $3[0m  [["rented", true], ["updated_at", "2023-12-04 23:45:57.119196"], ["id", 20]]
+  ↳ app/controllers/books_controller.rb:57
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:57
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[36mRental Create (0.9ms)[0m  [1m[32mINSERT INTO "rentals" ("book_id", "user_id", "rental", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["book_id", 20], ["user_id", 2], ["rental", "2023-12-04 23:45:57 +0000"], ["created_at", "2023-12-04 23:45:57.153518"], ["updated_at", "2023-12-04 23:45:57.153518"]]
+  ↳ app/controllers/books_controller.rb:59
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:59
+Redirected to http://localhost:3000/
+Completed 302 Found in 67ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:45:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mRental Load (0.3ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 8], ["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  [1m[36mRental Load (0.4ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 19], ["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  [1m[36mRental Load (0.2ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 20], ["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  Rendered books/index.html.erb within layouts/application (40.9ms)
+Completed 200 OK in 225ms (Views: 196.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:45:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mRental Load (0.4ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 8], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  [1m[36mRental Load (0.3ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 19], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  [1m[36mRental Load (0.6ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 20], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  Rendered books/index.html.erb within layouts/application (50.3ms)
+Completed 200 OK in 259ms (Views: 236.7ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/books/8/refund" for 10.0.2.2 at 2023-12-04 23:46:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#refund as HTML
+  Parameters: {"authenticity_token"=>"R6d+oSMDGYFTGMtRlKWQ3zw7TVpsjGjDSRPG4NFhRTQd/KUg5JNac+z33F46kfgDbwfY9TTMRKEID5ZAl5MdTg==", "id"=>"8"}
+  [1m[36mBook Load (1.8ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:68
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:71
+  [1m[36mBook Update (0.6ms)[0m  [1m[33mUPDATE "books" SET "rented" = $1, "updated_at" = $2 WHERE "books"."id" = $3[0m  [["rented", false], ["updated_at", "2023-12-04 23:46:01.255773"], ["id", 8]]
+  ↳ app/controllers/books_controller.rb:71
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:71
+  [1m[36mRental Load (0.3ms)[0m  [1m[34mSELECT "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1[0m  [["book_id", 8]]
+  ↳ app/controllers/books_controller.rb:74
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/books_controller.rb:74
+  [1m[36mRental Destroy (1.5ms)[0m  [1m[31mDELETE FROM "rentals" WHERE "rentals"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/books_controller.rb:74
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/books_controller.rb:74
+Redirected to http://localhost:3000/
+Completed 302 Found in 70ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:46:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mRental Load (0.3ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 19], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  [1m[36mRental Load (0.2ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 20], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  Rendered books/index.html.erb within layouts/application (33.7ms)
+Completed 200 OK in 204ms (Views: 181.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 10.0.2.2 at 2023-12-04 23:46:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:11
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  [1m[36mRental Load (0.3ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 19], ["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  [1m[36mRental Load (0.3ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."book_id" = $1 AND "rentals"."user_id" = $2 LIMIT $3[0m  [["book_id", 20], ["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:28
+  Rendered books/index.html.erb within layouts/application (37.9ms)
+Completed 200 OK in 258ms (Views: 237.2ms | ActiveRecord: 1.3ms)
+
+
