@@ -53,8 +53,6 @@ class BooksController < ApplicationController
   def rent
     @book = Book.find(params[:id])
 
-    puts 'books'
-
     if !@book.rented
       @book.update(rented: true)
 
