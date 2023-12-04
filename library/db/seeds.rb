@@ -1,7 +1,7 @@
 User.create!(
-  name: 'Admin User',
-  email: 'admin@example.com',
-  password: 'password'
+  name: 'Admin',
+  email: 'admin@gmail.com',
+  password: '123'
 )
 
 Book.create!(title: "Dom Quixote", author: "Miguel de Cervantes", publication: '02/12/2023', rented: false)

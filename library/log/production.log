@@ -1,0 +1,64 @@
+I, [2023-12-04T16:24:11.976977 #4427]  INFO -- : [aa702c89-43cb-4259-bc01-ebab4825d9cc] Started GET "/" for 10.0.2.2 at 2023-12-04 16:24:11 +0000
+I, [2023-12-04T16:24:11.977868 #4427]  INFO -- : [aa702c89-43cb-4259-bc01-ebab4825d9cc] Processing by BooksController#index as HTML
+I, [2023-12-04T16:24:11.984509 #4427]  INFO -- : [aa702c89-43cb-4259-bc01-ebab4825d9cc]   Rendering books/index.html.erb within layouts/application
+D, [2023-12-04T16:24:11.994131 #4427] DEBUG -- : [aa702c89-43cb-4259-bc01-ebab4825d9cc]   [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+I, [2023-12-04T16:24:12.002417 #4427]  INFO -- : [aa702c89-43cb-4259-bc01-ebab4825d9cc]   Rendered books/index.html.erb within layouts/application (17.8ms)
+I, [2023-12-04T16:24:12.002600 #4427]  INFO -- : [aa702c89-43cb-4259-bc01-ebab4825d9cc] Completed 500 Internal Server Error in 25ms (ActiveRecord: 5.7ms)
+F, [2023-12-04T16:24:12.002972 #4427] FATAL -- : [aa702c89-43cb-4259-bc01-ebab4825d9cc]   
+F, [2023-12-04T16:24:12.003098 #4427] FATAL -- : [aa702c89-43cb-4259-bc01-ebab4825d9cc] ActionView::Template::Error (The asset "livro.jpeg" is not present in the asset pipeline.
+):
+F, [2023-12-04T16:24:12.003183 #4427] FATAL -- : [aa702c89-43cb-4259-bc01-ebab4825d9cc]     12:             <div class="book">
+[aa702c89-43cb-4259-bc01-ebab4825d9cc]     13:               <div class="book-info">
+[aa702c89-43cb-4259-bc01-ebab4825d9cc]     14:                 <div class="book-photo">
+[aa702c89-43cb-4259-bc01-ebab4825d9cc]     15:                   <%= image_tag('livro.jpeg') %>
+[aa702c89-43cb-4259-bc01-ebab4825d9cc]     16:                 </div>
+[aa702c89-43cb-4259-bc01-ebab4825d9cc]     17:                 <div>
+[aa702c89-43cb-4259-bc01-ebab4825d9cc]     18:                   <h3><strong><%= book.title %></strong></h4>
+F, [2023-12-04T16:24:12.003223 #4427] FATAL -- : [aa702c89-43cb-4259-bc01-ebab4825d9cc]   
+F, [2023-12-04T16:24:12.003260 #4427] FATAL -- : [aa702c89-43cb-4259-bc01-ebab4825d9cc] app/views/books/index.html.erb:15:in `block in _app_views_books_index_html_erb___4102879154285084184_47193116739100'
+[aa702c89-43cb-4259-bc01-ebab4825d9cc] app/views/books/index.html.erb:10:in `_app_views_books_index_html_erb___4102879154285084184_47193116739100'
+I, [2023-12-04T16:24:15.658106 #4427]  INFO -- : [7d4306fc-ccc9-4efe-86f2-aa2b28b576a7] Started GET "/login" for 10.0.2.2 at 2023-12-04 16:24:15 +0000
+I, [2023-12-04T16:24:15.659395 #4427]  INFO -- : [7d4306fc-ccc9-4efe-86f2-aa2b28b576a7] Processing by SessionsController#new as HTML
+I, [2023-12-04T16:24:15.664692 #4427]  INFO -- : [7d4306fc-ccc9-4efe-86f2-aa2b28b576a7]   Rendering sessions/new.html.erb within layouts/application
+I, [2023-12-04T16:24:15.666258 #4427]  INFO -- : [7d4306fc-ccc9-4efe-86f2-aa2b28b576a7]   Rendered sessions/new.html.erb within layouts/application (1.4ms)
+I, [2023-12-04T16:24:15.666415 #4427]  INFO -- : [7d4306fc-ccc9-4efe-86f2-aa2b28b576a7] Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+F, [2023-12-04T16:24:15.666746 #4427] FATAL -- : [7d4306fc-ccc9-4efe-86f2-aa2b28b576a7]   
+F, [2023-12-04T16:24:15.666820 #4427] FATAL -- : [7d4306fc-ccc9-4efe-86f2-aa2b28b576a7] ActionView::Template::Error (The asset "logo.png" is not present in the asset pipeline.
+):
+F, [2023-12-04T16:24:15.666892 #4427] FATAL -- : [7d4306fc-ccc9-4efe-86f2-aa2b28b576a7]     1: <div class="login-container">
+[7d4306fc-ccc9-4efe-86f2-aa2b28b576a7]     2:   <%= image_tag('logo.png') %>
+[7d4306fc-ccc9-4efe-86f2-aa2b28b576a7]     3: 
+[7d4306fc-ccc9-4efe-86f2-aa2b28b576a7]     4:   <%= form_for(:session, url: login_path, html: { 'data-turbolinks': 'false' }) do |f| %>
+[7d4306fc-ccc9-4efe-86f2-aa2b28b576a7]     5:     <label for="email">Email</label>
+F, [2023-12-04T16:24:15.666925 #4427] FATAL -- : [7d4306fc-ccc9-4efe-86f2-aa2b28b576a7]   
+F, [2023-12-04T16:24:15.666957 #4427] FATAL -- : [7d4306fc-ccc9-4efe-86f2-aa2b28b576a7] app/views/sessions/new.html.erb:2:in `_app_views_sessions_new_html_erb__3028571100744040295_47193120649720'
+I, [2023-12-04T16:24:17.490847 #4427]  INFO -- : [b8a50e76-7456-47b2-9a1a-dcbe3d1b3817] Started GET "/login" for 10.0.2.2 at 2023-12-04 16:24:17 +0000
+I, [2023-12-04T16:24:17.492283 #4427]  INFO -- : [b8a50e76-7456-47b2-9a1a-dcbe3d1b3817] Processing by SessionsController#new as HTML
+I, [2023-12-04T16:24:17.494003 #4427]  INFO -- : [b8a50e76-7456-47b2-9a1a-dcbe3d1b3817]   Rendering sessions/new.html.erb within layouts/application
+I, [2023-12-04T16:24:17.496366 #4427]  INFO -- : [b8a50e76-7456-47b2-9a1a-dcbe3d1b3817]   Rendered sessions/new.html.erb within layouts/application (2.1ms)
+I, [2023-12-04T16:24:17.496657 #4427]  INFO -- : [b8a50e76-7456-47b2-9a1a-dcbe3d1b3817] Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+F, [2023-12-04T16:24:17.497326 #4427] FATAL -- : [b8a50e76-7456-47b2-9a1a-dcbe3d1b3817]   
+F, [2023-12-04T16:24:17.497464 #4427] FATAL -- : [b8a50e76-7456-47b2-9a1a-dcbe3d1b3817] ActionView::Template::Error (The asset "logo.png" is not present in the asset pipeline.
+):
+F, [2023-12-04T16:24:17.497700 #4427] FATAL -- : [b8a50e76-7456-47b2-9a1a-dcbe3d1b3817]     1: <div class="login-container">
+[b8a50e76-7456-47b2-9a1a-dcbe3d1b3817]     2:   <%= image_tag('logo.png') %>
+[b8a50e76-7456-47b2-9a1a-dcbe3d1b3817]     3: 
+[b8a50e76-7456-47b2-9a1a-dcbe3d1b3817]     4:   <%= form_for(:session, url: login_path, html: { 'data-turbolinks': 'false' }) do |f| %>
+[b8a50e76-7456-47b2-9a1a-dcbe3d1b3817]     5:     <label for="email">Email</label>
+F, [2023-12-04T16:24:17.497781 #4427] FATAL -- : [b8a50e76-7456-47b2-9a1a-dcbe3d1b3817]   
+F, [2023-12-04T16:24:17.497931 #4427] FATAL -- : [b8a50e76-7456-47b2-9a1a-dcbe3d1b3817] app/views/sessions/new.html.erb:2:in `_app_views_sessions_new_html_erb__3028571100744040295_47193120649720'
+I, [2023-12-04T16:24:28.336012 #4427]  INFO -- : [a1ae8b31-3109-49bb-9711-b4d81ac52808] Started GET "/login" for 10.0.2.2 at 2023-12-04 16:24:28 +0000
+I, [2023-12-04T16:24:28.337085 #4427]  INFO -- : [a1ae8b31-3109-49bb-9711-b4d81ac52808] Processing by SessionsController#new as HTML
+I, [2023-12-04T16:24:28.338672 #4427]  INFO -- : [a1ae8b31-3109-49bb-9711-b4d81ac52808]   Rendering sessions/new.html.erb within layouts/application
+I, [2023-12-04T16:24:28.342502 #4427]  INFO -- : [a1ae8b31-3109-49bb-9711-b4d81ac52808]   Rendered sessions/new.html.erb within layouts/application (3.5ms)
+I, [2023-12-04T16:24:28.342836 #4427]  INFO -- : [a1ae8b31-3109-49bb-9711-b4d81ac52808] Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+F, [2023-12-04T16:24:28.343511 #4427] FATAL -- : [a1ae8b31-3109-49bb-9711-b4d81ac52808]   
+F, [2023-12-04T16:24:28.343728 #4427] FATAL -- : [a1ae8b31-3109-49bb-9711-b4d81ac52808] ActionView::Template::Error (The asset "logo.png" is not present in the asset pipeline.
+):
+F, [2023-12-04T16:24:28.344052 #4427] FATAL -- : [a1ae8b31-3109-49bb-9711-b4d81ac52808]     1: <div class="login-container">
+[a1ae8b31-3109-49bb-9711-b4d81ac52808]     2:   <%= image_tag('logo.png') %>
+[a1ae8b31-3109-49bb-9711-b4d81ac52808]     3: 
+[a1ae8b31-3109-49bb-9711-b4d81ac52808]     4:   <%= form_for(:session, url: login_path, html: { 'data-turbolinks': 'false' }) do |f| %>
+[a1ae8b31-3109-49bb-9711-b4d81ac52808]     5:     <label for="email">Email</label>
+F, [2023-12-04T16:24:28.344138 #4427] FATAL -- : [a1ae8b31-3109-49bb-9711-b4d81ac52808]   
+F, [2023-12-04T16:24:28.344210 #4427] FATAL -- : [a1ae8b31-3109-49bb-9711-b4d81ac52808] app/views/sessions/new.html.erb:2:in `_app_views_sessions_new_html_erb__3028571100744040295_47193120649720'

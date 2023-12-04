@@ -18,5 +18,5 @@ class SessionsController < ApplicationController
       session[:user_id] = nil
       redirect_to login_path, notice: 'Logout bem-sucedido!'
     end
-  end
+end
   
