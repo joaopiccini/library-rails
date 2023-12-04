@@ -3,7 +3,7 @@
 - `vagrant up`
 - `cd /rails/library`
 - `bundle install`
-- `rails dbconsole`
+- `psql`
 - `alter user vagrant encrypted password 'vagrant';`
 - `rails db:create`
 - `rails db:migrate`
